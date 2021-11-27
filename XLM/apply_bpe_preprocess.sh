@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pair=en-fr
+pair=da-ms
 OUTPATH=/content/XLM/data/processed/XLM_en_fr/50k
 FASTBPE=tools/fastBPE/fast
 
