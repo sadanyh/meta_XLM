@@ -31,7 +31,7 @@ class Translate():
 
         params = parser.parse_args()
         assert params.src_lang != '' and params.tgt_lang != '' and params.src_lang != params.tgt_lang
-
+        params.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         # initialize the experiment
         logger = initialize_exp(params)
         
